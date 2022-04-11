@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <typeAliases>
+        <package name="com.lhuc.pojo"/>
+    </typeAliases>
+    <mappers>
+        <!-- 第一种方式，用resource -->
+        <!--<mapper resource="com/lhuc/dao/BookMapper.xml" />-->
+        <!-- 第二种方式，用class -->
+        <mapper class="com.lhuc.dao.BookMapper" />
+        <!-- 第三种方式， 用package -->
+        <!--<package name="com.lhuc.dao"/>-->
+    </mappers>
+</configuration>
